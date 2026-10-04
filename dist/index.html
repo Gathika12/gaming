@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHER PRO // Flagship Matte-Black Wireless Controller</title>
+  <meta name="description" content="Experience the AETHER PRO flagship matte-black console controller. Precision engineered Hall-effect analog sticks, dual-stage adaptive triggers, and 1000Hz polling rate. Built from the inside out.">
+  
+  <!-- Modern Geometric & Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script type="module" crossorigin src="./assets/index-B19g8kxz.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DiBia8BY.css">
+</head>
+<body class="bg-black text-white antialiased selection-cyan">
+
+  <!-- Ambient Sound FX Player & Audio Toggle -->
+  <button id="audio-toggle-btn" class="audio-floating-btn" aria-label="Toggle Tactile Sound Effects" title="Tactile UI Audio Experience">
+    <div class="audio-waves">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="audio-btn-label">AUDIO: OFF</span>
+  </button>
+
+  <!-- Luxury Minimalist Fixed Navigation -->
+  <header id="main-header" class="fixed-nav">
+    <div class="nav-container">
+      
+      <!-- Brand Logo / Controller Icon -->
+      <a href="#hero-section" class="nav-brand" id="nav-brand-link">
+        <div class="brand-icon-wrapper">
+          <svg class="brand-controller-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="6" />
+            <path d="M6 12h4" />
+            <path d="M8 10v4" />
+            <circle cx="15" cy="11" r="1" fill="currentColor" />
+            <circle cx="17" cy="13" r="1" fill="currentColor" />
+          </svg>
+          <div class="brand-glow"></div>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">AETHER</span>
+          <span class="brand-badge">PRO // LABS</span>
+        </div>
+      </a>
+
+      <!-- Center Links -->
+      <nav class="nav-links" id="desktop-nav">
+        <a href="#hero-section" class="nav-link active">Home</a>
+        <a href="#features-overview" class="nav-link">Controllers</a>
+        <a href="#interactive-lab" class="nav-link">Gaming Gear</a>
+        <a href="#engineering-stage" class="nav-link">Features</a>
+        <a href="#specs-section" class="nav-link">Specs</a>
+        <a href="#shop-section" class="nav-link">Shop</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <button id="search-open-btn" class="nav-icon-btn" aria-label="Search Catalog" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Trigger with Counter Badge -->
+        <button id="cart-open-btn" class="nav-icon-btn cart-btn" aria-label="Shopping Cart" title="View Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span id="cart-count-badge" class="cart-badge">1</span>
+        </button>
+
+        <!-- Shop Now CTA -->
+        <button id="nav-shop-cta" class="nav-cta-btn" onclick="document.getElementById('shop-section').scrollIntoView({behavior: 'smooth'})">
+          <span>Shop Now</span>
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav-list">
+        <a href="#hero-section" class="mobile-nav-item">Home</a>
+        <a href="#features-overview" class="mobile-nav-item">Controllers</a>
+        <a href="#interactive-lab" class="mobile-nav-item">Gaming Gear</a>
+        <a href="#engineering-stage" class="mobile-nav-item">Features</a>
+        <a href="#specs-section" class="mobile-nav-item">Specs</a>
+        <a href="#shop-section" class="mobile-nav-item">Shop</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="primary-btn w-full" onclick="window.AetherApp.openCart()">View Cart ($199.00)</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- SCROLLYTELLING CONTAINER (Sticky full-screen canvas with 500vh scroll track) -->
+    <section id="scrolly-container" class="scrolly-wrapper">
+      
+      <!-- STICKY VIEWPORT (100vh) -->
+      <div class="sticky-frame">
+        
+        <!-- Deep Ambient Glow Layers -->
+        <div class="ambient-glow glow-cyan"></div>
+        <div class="ambient-glow glow-violet"></div>
+        <div class="ambient-vignette"></div>
+
+        <!-- Canvas Background Grid & Tech Lines -->
+        <div class="tech-grid-overlay"></div>
+
+        <!-- The High-Resolution Image Sequence Canvas -->
+        <canvas id="controller-canvas" class="hero-canvas"></canvas>
+
+        <!-- Subtle Top & Bottom Blending Gradients for infinite studio transition -->
+        <div class="canvas-fade-top"></div>
+        <div class="canvas-fade-bottom"></div>
+
+        <!-- Preloader / Loading Status Bar -->
+        <div id="canvas-loader" class="canvas-loader">
+          <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text-group">
+              <span class="loader-title">INITIALIZING AETHER ENGINE</span>
+              <span id="loader-percent" class="loader-percent">0%</span>
+            </div>
+            <div class="loader-bar-bg">
+              <div id="loader-bar-fill" class="loader-bar-fill"></div>
+            </div>
+            <span class="loader-sub">DECODING 300 HIGH-RES MECHANICAL FRAMES</span>
+          </div>
+        </div>
+
+        <!-- Studio HUD Overlay (Precision Gaming Telemetry) -->
+        <div class="hud-layer pointer-events-none">
+          
+          <!-- Top Left Telemetry -->
+          <div class="hud-element hud-top-left">
+            <div class="hud-pill">
+              <span class="pulse-dot"></span>
+              <span class="hud-mono">SERIES: AETHER-GEN4 // ARCH-909</span>
+            </div>
+            <div class="hud-subtext">OPTICAL-MAGNETIC ARCHITECTURE</div>
+          </div>
+
+          <!-- Top Right Telemetry -->
+          <div class="hud-element hud-top-right">
+            <div class="hud-chip">
+              <span class="chip-label">POLLING</span>
+              <span class="chip-val">1000Hz / 0.2ms</span>
+            </div>
+            <div class="hud-chip">
+              <span class="chip-label">SENSORS</span>
+              <span class="chip-val">HALL EFFECT</span>
+            </div>
+          </div>
+
+          <!-- Bottom Left Telemetry -->
+          <div class="hud-element hud-bottom-left">
+            <div class="hud-status-row">
+              <span class="status-indicator"></span>
+              <span class="hud-mono">CORE STATUS: SYNCHRONIZED</span>
+            </div>
+            <div class="hud-coords">LAT: 0.18ms • DRIFT: 0.00% • TACTILE: 65gf</div>
+          </div>
+
+          <!-- Bottom Right Frame & Scroll Progress Indicator -->
+          <div class="hud-element hud-bottom-right">
+            <div class="scroll-tracker-box">
+              <div class="tracker-header">
+                <span class="tracker-label">SEQUENCE DECOMPOSITION</span>
+                <span id="hud-frame-num" class="tracker-frame">FRM 001/300</span>
+              </div>
+              <div class="tracker-bar">
+                <div id="hud-progress-fill" class="tracker-fill"></div>
+              </div>
+              <div class="tracker-footer">
+                <span id="hud-stage-name">01 // HERO STAGE</span>
+                <span id="hud-percent-val">0%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DYNAMIC HOTSPOT PINS (Appear during exploded engineering stages) -->
+        <div id="hotspot-overlay" class="hotspot-layer pointer-events-none">
+          
+          <!-- Pin 1: Hall Effect Analog Sticks -->
+          <div class="tech-pin pin-left" id="pin-hall-sticks">
+            <div class="pin-marker">
+              <span class="pin-ring"></span>
+              <span class="pin-dot"></span>
+            </div>
+            <div class="pin-card pointer-events-auto">
+              <span class="pin-tag">MAGNETIC SENSORS</span>
+              <h4 class="pin-title">Dual Hall-Effect Joysticks</h4>
+              <p class="pin-desc">Permanent zero-contact magnetic flux eliminates stick drift permanently.</p>
+              <div class="pin-stat"><span>ACTUATION:</span> <strong>0.01mm Precision</strong></div>
+            </div>
+          </div>
+
+          <!-- Pin 2: 32-bit Ultra-Sync Mainboard -->
+          <div class="tech-pin pin-center" id="pin-pcb">
+            <div class="pin-marker">
+              <span class="pin-ring"></span>
+              <span class="pin-dot"></span>
+            </div>
+            <div class="pin-card pointer-events-auto">
+              <span class="pin-tag">MAINBOARD</span>
+              <h4 class="pin-title">Dual-Core Cortex MCU</h4>
+              <p class="pin-desc">Dedicated coprocessor handles input polling at true 1,000Hz with zero jitter.</p>
+              <div class="pin-stat"><span>LATENCY:</span> <strong>0.2ms Ultra-Sync</strong></div>
+            </div>
+          </div>
+
+          <!-- Pin 3: Dual Voice Coil Haptics -->
+          <div class="tech-pin pin-right" id="pin-haptics">
+            <div class="pin-marker">
+              <span class="pin-ring"></span>
+              <span class="pin-dot"></span>
+            </div>
+            <div class="pin-card pointer-events-auto">
+              <span class="pin-tag">HAPTIC ENGINE</span>
+              <h4 class="pin-title">Wideband Voice Coils</h4>
+              <p class="pin-desc">High-bandwidth tactile actuators render micro-textures from 10Hz to 400Hz.</p>
+              <div class="pin-stat"><span>FORCE:</span> <strong>3.2G Peak Impulse</strong></div>
+            </div>
+          </div>
+
+          <!-- Pin 4: Hair Triggers with Magnetic Stops -->
+          <div class="tech-pin pin-top" id="pin-triggers">
+            <div class="pin-marker">
+              <span class="pin-ring"></span>
+              <span class="pin-dot"></span>
+            </div>
+            <div class="pin-card pointer-events-auto">
+              <span class="pin-tag">ADAPTIVE TACTILE</span>
+              <h4 class="pin-title">Dual-Stage Hair Triggers</h4>
+              <p class="pin-desc">Mechanical stops instantly switch from full 10mm analog pull to 0.5mm mouse-click trigger.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============================================== -->
+        <!-- 5 SCROLL-SYNCHRONIZED EDITORIAL CONTENT STAGES -->
+        <!-- ============================================== -->
+        <div class="scroll-narrative-container">
+          
+          <!-- STAGE 1: 0–15% SCROLL — HERO / PRODUCT REVEAL -->
+          <div class="story-stage stage-hero active" id="stage-1" data-stage="1">
+            <div class="stage-content text-center">
+              
+              <div class="hero-chip">
+                <span class="chip-glow-dot"></span>
+                <span>FLAGSHIP MATTE-BLACK CONSOLE CONTROLLER</span>
+              </div>
+
+              <h1 class="hero-title">
+                THE NEXT LEVEL<br>
+                <span class="gradient-text-hero">OF CONTROL</span>
+              </h1>
+
+              <p class="hero-subline">
+                Precision engineered for every move, every match, every victory.
+              </p>
+
+              <div class="hero-cta-group">
+                <button class="primary-glow-btn" onclick="document.getElementById('shop-section').scrollIntoView({behavior: 'smooth'})">
+                  <span>Shop Controller</span>
+                  <div class="btn-reflect"></div>
+                </button>
+                <button class="ghost-glass-btn" onclick="window.AetherApp.scrollToStage(2)">
+                  <span>Explore Features</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-2">
+                    <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L10 14.586l5.293-5.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Scroll indicator hint -->
+              <div class="scroll-prompt">
+                <span class="scroll-hint-text">SCROLL TO DECONSTRUCT</span>
+                <div class="scroll-mouse-icon">
+                  <div class="scroll-mouse-wheel"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STAGE 2: 15–40% SCROLL — ENGINEERING REVEAL -->
+          <div class="story-stage stage-engineering" id="stage-2" data-stage="2">
+            <div class="stage-content text-left-card">
+              
+              <div class="section-tag-row">
+                <span class="step-num">01</span>
+                <div class="tag-line"></div>
+                <span class="tag-label">INTERNAL ARCHITECTURE</span>
+              </div>
+
+              <h2 class="editorial-headline">
+                BUILT FROM THE<br>
+                <span class="gradient-text-cyan">INSIDE OUT</span>
+              </h2>
+
+              <p class="editorial-body">
+                Every component is engineered for precise control, responsive feedback, and long-session durability.
+              </p>
+
+              <!-- Technical architectural badges -->
+              <div class="tech-spec-pills">
+                <div class="spec-pill">
+                  <span class="pill-dot"></span>
+                  <span class="pill-title">AEROSPACE CHASSIS</span>
+                  <span class="pill-sub">Torsional Rigidity</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="pill-dot"></span>
+                  <span class="pill-title">FLOATING PCB</span>
+                  <span class="pill-sub">Shock Isolated</span>
+                </div>
+                <div class="spec-pill">
+                  <span class="pill-dot"></span>
+                  <span class="pill-title">SOLID-STATE CORE</span>
+                  <span class="pill-sub">Industrial Durability</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STAGE 3: 40–65% SCROLL — PRECISION & PERFORMANCE -->
+          <div class="story-stage stage-precision" id="stage-3" data-stage="3">
+            <div class="stage-content text-right-card">
+              
+              <div class="section-tag-row justify-end">
+                <span class="step-num">02</span>
+                <div class="tag-line"></div>
+                <span class="tag-label">ELECTROMECHANICAL MATRIX</span>
+              </div>
+
+              <h2 class="editorial-headline">
+                PRECISION IN<br>
+                <span class="gradient-text-violet">EVERY INPUT</span>
+              </h2>
+
+              <!-- Key supporting points requested by prompt -->
+              <ul class="precision-points-list">
+                <li class="precision-item">
+                  <div class="precision-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </div>
+                  <div class="precision-info">
+                    <span class="precision-highlight">Ultra-responsive controls.</span>
+                    <span class="precision-sub">Mechanical switches tuned to 0.3mm actuation travel.</span>
+                  </div>
+                </li>
+
+                <li class="precision-item">
+                  <div class="precision-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <line x1="12" y1="2" x2="12" y2="4"></line>
+                      <line x1="12" y1="20" x2="12" y2="22"></line>
+                    </svg>
+                  </div>
+                  <div class="precision-info">
+                    <span class="precision-highlight">Accurate analog movement.</span>
+                    <span class="precision-sub">Hall effect sensors with zero digital deadzones.</span>
+                  </div>
+                </li>
+
+                <li class="precision-item">
+                  <div class="precision-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                      <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                      <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                    </svg>
+                  </div>
+                  <div class="precision-info">
+                    <span class="precision-highlight">Fast wireless connectivity.</span>
+                    <span class="precision-sub">Sub-millisecond 2.4GHz RF sync &amp; Bluetooth 5.3 Low Energy.</span>
+                  </div>
+                </li>
+
+                <li class="precision-item">
+                  <div class="precision-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M2 12h2"></path>
+                      <path d="M20 12h2"></path>
+                      <path d="M12 2v2"></path>
+                      <path d="M12 20v2"></path>
+                      <circle cx="12" cy="12" r="7"></circle>
+                    </svg>
+                  </div>
+                  <div class="precision-info">
+                    <span class="precision-highlight">Immersive haptic feedback.</span>
+                    <span class="precision-sub">Dual high-fidelity voice-coil actuators simulate genuine surface textures.</span>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <!-- STAGE 4: 65–85% SCROLL — GAMING EXPERIENCE -->
+          <div class="story-stage stage-experience" id="stage-4" data-stage="4">
+            <div class="stage-content text-left-card">
+              
+              <div class="section-tag-row">
+                <span class="step-num">03</span>
+                <div class="tag-line"></div>
+                <span class="tag-label">HUMAN-CENTERED ERGONOMICS</span>
+              </div>
+
+              <h2 class="editorial-headline">
+                DESIGNED FOR<br>
+                <span class="gradient-text-cyan">LONGER SESSIONS</span>
+              </h2>
+
+              <p class="editorial-body">
+                An ergonomic form, balanced weight distribution, textured grips, and responsive controls keep you comfortable and in control from the first round to the final match.
+              </p>
+
+              <!-- Tactile feature cards -->
+              <div class="tactile-features-grid">
+                <div class="tactile-card">
+                  <div class="tactile-metric">242g</div>
+                  <div class="tactile-title">Balanced Weight</div>
+                  <div class="tactile-desc">50:50 neutral center of gravity reduces wrist fatigue by 42%.</div>
+                </div>
+                <div class="tactile-card">
+                  <div class="tactile-metric">0.1mm</div>
+                  <div class="tactile-title">Micro-Etched Grips</div>
+                  <div class="tactile-desc">Laser-sculpted diamond composite surface channels moisture.</div>
+                </div>
+                <div class="tactile-card">
+                  <div class="tactile-metric">40h+</div>
+                  <div class="tactile-title">Solid-State Power</div>
+                  <div class="tactile-desc">High-density lithium cell charges to 80% in 35 minutes.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- STAGE 5: 85–100% SCROLL — REASSEMBLY & SHOPPING CTA -->
+          <div class="story-stage stage-checkout" id="stage-5" data-stage="5">
+            <div class="stage-content text-center checkout-card">
+              
+              <div class="reassembly-badge">
+                <svg viewBox="0 0 16 16" fill="currentColor" class="w-3.5 h-3.5 mr-1.5 text-cyan-400">
+                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"/>
+                </svg>
+                <span>PRECISION REASSEMBLY COMPLETE</span>
+              </div>
+
+              <h2 class="final-headline">
+                CONTROL THE GAME.
+              </h2>
+
+              <p class="final-subheadline">
+                Precision. Performance. Built for your next level.
+              </p>
+
+              <!-- Price Box -->
+              <div class="price-display-wrapper">
+                <div class="price-main">
+                  <span class="currency">$</span>
+                  <span class="amount">199</span>
+                  <span class="cents">.00</span>
+                  <span class="edition-label">USD</span>
+                </div>
+                <div class="price-installments">
+                  or 4 interest-free payments of <strong>$49.75</strong> with <span class="klarna-badge">Klarna</span>
+                </div>
+              </div>
+
+              <!-- Main Action Buttons -->
+              <div class="final-cta-group">
+                <button id="add-to-cart-stage-btn" class="primary-glow-btn add-cart-action" onclick="window.AetherApp.handleAddToCart(event)">
+                  <span class="btn-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </span>
+                  <span>ADD TO CART</span>
+                  <div class="btn-reflect"></div>
+                </button>
+
+                <button id="view-specs-stage-btn" class="ghost-glass-btn" onclick="window.AetherApp.openSpecsModal()">
+                  <span>VIEW FULL SPECS</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-2">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Required Trust Assurances from prompt -->
+              <div class="trust-assurances">
+                <span class="trust-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H11a1 1 0 001-1v-1h3.05a2.5 2.5 0 014.9 0H19a1 1 0 001-1v-5a1 1 0 00-.293-.707l-3-3A1 1 0 0016 4H3z"/></svg>
+                  Free delivery
+                </span>
+                <span class="trust-sep">•</span>
+                <span class="trust-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/></svg>
+                  Secure checkout
+                </span>
+                <span class="trust-sep">•</span>
+                <span class="trust-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  1-year warranty
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 2: INTERACTIVE 360 & EXPLODED LAB      -->
+    <!-- ============================================== -->
+    <section id="interactive-lab" class="lab-section">
+      <div class="site-container">
+        
+        <div class="lab-header">
+          <div class="eyebrow-chip">INTERACTIVE LAB</div>
+          <h2 class="section-title">PRECISION EXPLODED VIEW</h2>
+          <p class="section-desc">
+            Manually scrub through all 300 mechanical frames or inspect isolated subsystem schematics.
+          </p>
+        </div>
+
+        <div class="scrubber-card">
+          <!-- Live Preview Canvas / Mirror -->
+          <div class="scrubber-canvas-box">
+            <canvas id="scrubber-canvas" class="scrubber-canvas"></canvas>
+            
+            <div class="scrubber-hotspots">
+              <button class="scrubber-tag-btn" onclick="window.AetherApp.seekScrubber(1)">
+                <span>HERO ASSEMBLED</span>
+              </button>
+              <button class="scrubber-tag-btn" onclick="window.AetherApp.seekScrubber(75)">
+                <span>SCREWS &amp; SHELL</span>
+              </button>
+              <button class="scrubber-tag-btn" onclick="window.AetherApp.seekScrubber(150)">
+                <span>CORE PCB &amp; MOTORS</span>
+              </button>
+              <button class="scrubber-tag-btn" onclick="window.AetherApp.seekScrubber(300)">
+                <span>FULL DECONSTRUCTION</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Range Slider -->
+          <div class="scrubber-controls">
+            <div class="scrub-label-row">
+              <span class="scrub-status">DRAG TO EXPLODE OR REASSEMBLE</span>
+              <span id="scrub-val-text" class="scrub-val">FRAME 001 // ASSEMBLED</span>
+            </div>
+            <input type="range" id="frame-scrubber" min="1" max="300" value="1" class="custom-range-slider" aria-label="Exploded Frame Scrubber">
+            <div class="scrub-ticks">
+              <span>0% Assembled</span>
+              <span>25% Deconstructed</span>
+              <span>50% Subsystems</span>
+              <span>75% Floating Matrix</span>
+              <span>100% Exploded</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 3: FINISH & ACCENT CUSTOMIZER          -->
+    <!-- ============================================== -->
+    <section id="features-overview" class="customizer-section">
+      <div class="site-container">
+        
+        <div class="lab-header">
+          <div class="eyebrow-chip">EDITIONS &amp; MATERIALS</div>
+          <h2 class="section-title">CHOOSE YOUR SIGNATURE FINISH</h2>
+          <p class="section-desc">
+            Curated matte industrial finishes with laser-etched accents and custom RGB ambient ring.
+          </p>
+        </div>
+
+        <div class="customizer-grid">
+          
+          <!-- Finish 1: Onyx Stealth (Default) -->
+          <div class="edition-card active" data-edition="onyx" onclick="window.AetherApp.switchEdition('onyx', this)">
+            <div class="edition-preview">
+              <div class="edition-swatch swatch-onyx"></div>
+              <div class="edition-indicator">ACTIVE SELECTION</div>
+            </div>
+            <div class="edition-info">
+              <h3 class="edition-name">Onyx Stealth</h3>
+              <p class="edition-summary">Deep non-reflective matte obsidian with cyan tactical rim illumination.</p>
+              <div class="edition-specs">
+                <span>Finish: Micro-Velvet Matte</span>
+                <span>Accents: Electric Cyan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finish 2: Phantom Violet -->
+          <div class="edition-card" data-edition="violet" onclick="window.AetherApp.switchEdition('violet', this)">
+            <div class="edition-preview">
+              <div class="edition-swatch swatch-violet"></div>
+              <div class="edition-indicator">LIMITED BATCH</div>
+            </div>
+            <div class="edition-info">
+              <h3 class="edition-name">Phantom Violet</h3>
+              <p class="edition-summary">Dark volcanic anthracite with ultraviolet aerospace highlights.</p>
+              <div class="edition-specs">
+                <span>Finish: Satin Ceramic</span>
+                <span>Accents: Cyber Violet</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finish 3: Cyber Frost -->
+          <div class="edition-card" data-edition="frost" onclick="window.AetherApp.switchEdition('frost', this)">
+            <div class="edition-preview">
+              <div class="edition-swatch swatch-frost"></div>
+              <div class="edition-indicator">IN STOCK</div>
+            </div>
+            <div class="edition-info">
+              <h3 class="edition-name">Cyber Graphite</h3>
+              <p class="edition-summary">Brushed magnesium grey with high-voltage emerald glow.</p>
+              <div class="edition-specs">
+                <span>Finish: Anodized Alloy</span>
+                <span>Accents: Emerald Neon</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 4: ARCHITECTURAL BENTO HIGHLIGHTS      -->
+    <!-- ============================================== -->
+    <section id="engineering-stage" class="bento-section">
+      <div class="site-container">
+        
+        <div class="lab-header">
+          <div class="eyebrow-chip">ENGINEERING HIGHLIGHTS</div>
+          <h2 class="section-title">THE HARDWARE ADVANTAGE</h2>
+          <p class="section-desc">
+            Engineered without compromise. Every internal subsystem outclasses traditional tournament controllers.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento 1: Hall Effect Sticks -->
+          <div class="bento-card bento-large">
+            <div class="bento-content">
+              <span class="bento-tag">OPTICAL-MAGNETIC GIMBALS</span>
+              <h3 class="bento-title">Magnetic Hall-Effect Sensors</h3>
+              <p class="bento-text">
+                Traditional potentiometers wear out and develop deadzones over time. Aether Pro uses non-contact electromagnetic inductors for 100% zero drift over 50 million cycles.
+              </p>
+              <div class="bento-metric-row">
+                <div class="metric-item">
+                  <div class="metric-val">0.00%</div>
+                  <div class="metric-lbl">Permanent Drift</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">50M+</div>
+                  <div class="metric-lbl">Cycle Lifetime</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">12-bit</div>
+                  <div class="metric-lbl">Axis Resolution</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Adaptive Hair Triggers -->
+          <div class="bento-card">
+            <div class="bento-content">
+              <span class="bento-tag">DUAL-STAGE LOCKS</span>
+              <h3 class="bento-title">Instant Hair Triggers</h3>
+              <p class="bento-text">
+                Toggle physical stops between 10mm full analog travel for racing titles and 0.5mm mouse-click actuation for competitive FPS.
+              </p>
+              <div class="bento-footer-stat">
+                <span>TRIGGER TRAVEL:</span> <strong>0.5mm - 10mm</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: 1000Hz Polling Rate -->
+          <div class="bento-card">
+            <div class="bento-content">
+              <span class="bento-tag">SUB-MILLISECOND LATENCY</span>
+              <h3 class="bento-title">1000Hz Ultra-Sync</h3>
+              <p class="bento-text">
+                Transmits 1,000 packets per second over proprietary 2.4GHz RF, delivering true 0.2ms wireless response time with zero jitter.
+              </p>
+              <div class="bento-footer-stat">
+                <span>WIRELESS LATENCY:</span> <strong>0.2ms True Sync</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Wideband Voice Coil Haptics -->
+          <div class="bento-card bento-wide">
+            <div class="bento-content">
+              <span class="bento-tag">ACOUSTIC HAPTICS</span>
+              <h3 class="bento-title">Dual Voice-Coil Actuators</h3>
+              <p class="bento-text">
+                Rather than primitive off-balance weights, Aether utilizes dual high-fidelity linear voice-coil motors capable of replicating subtle footsteps, engine revs, and weapon recoil with surgical nuance.
+              </p>
+              <div class="bento-metric-row">
+                <div class="metric-item">
+                  <div class="metric-val">10-400Hz</div>
+                  <div class="metric-lbl">Frequency Band</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">3.2G</div>
+                  <div class="metric-lbl">Peak Instant Force</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">4 Channels</div>
+                  <div class="metric-lbl">Independent Zones</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 5: TECHNICAL SPECIFICATIONS            -->
+    <!-- ============================================== -->
+    <section id="specs-section" class="specs-section">
+      <div class="site-container">
+        
+        <div class="lab-header">
+          <div class="eyebrow-chip">FULL ARCHITECTURAL MATRIX</div>
+          <h2 class="section-title">TECHNICAL SPECIFICATIONS</h2>
+          <p class="section-desc">
+            Direct comparison between Aether Pro and standard tournament hardware.
+          </p>
+        </div>
+
+        <div class="specs-table-wrapper">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Hardware Parameter</th>
+                <th class="col-highlight">AETHER PRO // FLAGSHIP</th>
+                <th>Standard Console Controller</th>
+                <th>Competitor Pro ($250+)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Thumbstick Technology</strong></td>
+                <td class="col-highlight"><span class="badge-tech">Hall-Effect Magnetic (Zero Drift)</span></td>
+                <td>Carbon Potentiometer</td>
+                <td>Carbon Potentiometer</td>
+              </tr>
+              <tr>
+                <td><strong>Polling Rate (Wireless)</strong></td>
+                <td class="col-highlight"><span class="val-pro">1000Hz (0.2ms latency)</span></td>
+                <td>125Hz - 250Hz (4-8ms)</td>
+                <td>500Hz (2ms)</td>
+              </tr>
+              <tr>
+                <td><strong>Face Button Switches</strong></td>
+                <td class="col-highlight"><span class="val-pro">Omron Tactile Mechanical (65gf)</span></td>
+                <td>Conductive Rubber Membrane</td>
+                <td>Rubber Membrane</td>
+              </tr>
+              <tr>
+                <td><strong>Trigger Mechanism</strong></td>
+                <td class="col-highlight"><span class="val-pro">Dual-Stage Magnetic Hair Triggers</span></td>
+                <td>Fixed Standard Springs</td>
+                <td>Mechanical 2-way stop</td>
+              </tr>
+              <tr>
+                <td><strong>Haptic Feedback</strong></td>
+                <td class="col-highlight"><span class="val-pro">Dual Linear Voice-Coils (10-400Hz)</span></td>
+                <td>Rotary ERM Motors</td>
+                <td>Standard ERM Motors</td>
+              </tr>
+              <tr>
+                <td><strong>Battery Runtime</strong></td>
+                <td class="col-highlight"><span class="val-pro">40+ Hours (1500mAh Solid-State)</span></td>
+                <td>12 - 15 Hours</td>
+                <td>20 Hours</td>
+              </tr>
+              <tr>
+                <td><strong>Weight &amp; Balance</strong></td>
+                <td class="col-highlight"><span class="val-pro">242g (50:50 Center of Mass)</span></td>
+                <td>280g (Front Heavy)</td>
+                <td>310g (Heavy)</td>
+              </tr>
+              <tr>
+                <td><strong>Connectivity Modes</strong></td>
+                <td class="col-highlight"><span class="val-pro">2.4GHz RF / BT 5.3 / Braided USB-C</span></td>
+                <td>BT / USB-C</td>
+                <td>BT / USB-C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="specs-modal-trigger-row">
+          <button class="ghost-glass-btn" onclick="window.AetherApp.openSpecsModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 mr-2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>DOWNLOAD COMPLETE WHITE PAPER &amp; DIMENSION SCHEMATICS</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 6: E-COMMERCE SHOP & ACCESSORIES       -->
+    <!-- ============================================== -->
+    <section id="shop-section" class="shop-section">
+      <div class="site-container">
+        
+        <div class="lab-header">
+          <div class="eyebrow-chip">OFFICIAL HARDWARE STORE</div>
+          <h2 class="section-title">EQUIP YOUR LOADOUT</h2>
+          <p class="section-desc">
+            Complete your setup with official precision peripherals and magnetic wireless docks.
+          </p>
+        </div>
+
+        <div class="shop-grid">
+          
+          <!-- Product Card: Aether Pro Controller -->
+          <div class="product-card featured-product">
+            <div class="product-badge">FLAGSHIP HERO</div>
+            <div class="product-media">
+              <img src="./assets/ezgif-frame-001-BIi2c6ek.jpg" alt="Aether Pro Wireless Controller" class="product-img">
+            </div>
+            <div class="product-details">
+              <div class="product-cat">TACTICAL CONTROLLER</div>
+              <h3 class="product-title">Aether Pro // Wireless Controller</h3>
+              <p class="product-summary">Includes 2.4GHz Ultra-Sync Dongle, 3m Braided Paracord Cable, 4 Thumbstick Caps &amp; Travel Hardcase.</p>
+              
+              <div class="product-price-row">
+                <div class="p-price">$199.00</div>
+                <div class="p-stock">● In Stock (Ships Today)</div>
+              </div>
+
+              <button class="primary-glow-btn w-full" onclick="window.AetherApp.handleAddToCart(event, {name: 'Aether Pro // Wireless Controller', price: 199.00, img: './hero_images/ezgif-frame-001.jpg'})">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card: Magnetic Fast-Charging Dock -->
+          <div class="product-card">
+            <div class="product-badge">ESSENTIAL</div>
+            <div class="product-media">
+              <div class="dock-graphic-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="4" y="14" width="16" height="6" rx="2"></rect>
+                  <path d="M12 6v8"></path>
+                  <path d="M8 10l4-4 4 4"></path>
+                </svg>
+                <span>MAGNETIC QUICK-DOCK</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="product-cat">POWER ACCESSORY</div>
+              <h3 class="product-title">Aether Magnetic Quick-Dock</h3>
+              <p class="product-summary">Drop-in magnetic pin charging with weighted aluminum base and understated ambient underglow.</p>
+              
+              <div class="product-price-row">
+                <div class="p-price">$39.00</div>
+                <div class="p-stock">● In Stock</div>
+              </div>
+
+              <button class="ghost-glass-btn w-full" onclick="window.AetherApp.handleAddToCart(event, {name: 'Aether Magnetic Quick-Dock', price: 39.00, img: './hero_images/ezgif-frame-001.jpg'})">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card: Pro Swappable Stick Pack -->
+          <div class="product-card">
+            <div class="product-badge">CUSTOMIZE</div>
+            <div class="product-media">
+              <div class="dock-graphic-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>PRO THUMBSTICK MATRIX</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="product-cat">CUSTOMIZATION</div>
+              <h3 class="product-title">Magnetic Cap Tuner Pack</h3>
+              <p class="product-summary">Set of 6 magnetic stick tops: 2 high-rise domed, 2 concave sniper sticks, and 2 micro-ribbed speed tops.</p>
+              
+              <div class="product-price-row">
+                <div class="p-price">$19.00</div>
+                <div class="p-stock">● In Stock</div>
+              </div>
+
+              <button class="ghost-glass-btn w-full" onclick="window.AetherApp.handleAddToCart(event, {name: 'Magnetic Cap Tuner Pack', price: 19.00, img: './hero_images/ezgif-frame-001.jpg'})">
+                <span>Add To Cart</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 7: CRITIC ACCLAIM & AWARDS             -->
+    <!-- ============================================== -->
+    <section class="acclaim-section">
+      <div class="site-container">
+        
+        <div class="awards-bar">
+          <div class="award-chip">★ AWWWARDS SITE OF THE DAY CANDIDATE</div>
+          <div class="award-chip">★ CES 2026 BEST GAMING HARDWARE</div>
+          <div class="award-chip">★ RED DOT DESIGN WINNER</div>
+        </div>
+
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">“The mechanical precision of this controller makes standard console pads feel like toys. Zero drift is an absolute game-changer.”</p>
+            <div class="quote-author">IGN Reviews — 9.8 / 10 Masterpiece</div>
+          </div>
+          <div class="quote-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">“Apple-level industrial aesthetics married with uncompromising esports ergonomics. The exploded scrollytelling experience says it all.”</p>
+            <div class="quote-author">PC Gamer — Editor's Choice 2026</div>
+          </div>
+          <div class="quote-card">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text">“True 1000Hz polling with 0.2ms latency in a wireless controller is genuinely unprecedented. The tactile response is intoxicating.”</p>
+            <div class="quote-author">The Verge — 9.5 / 10</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- LUXURY EDITORIAL FOOTER                        -->
+  <!-- ============================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="brand-text-group">
+            <span class="brand-name">AETHER</span>
+            <span class="brand-badge">HARDWARE LABS</span>
+          </div>
+          <p class="footer-mission">
+            Redefining competitive tactile interfaces through advanced electromagnetic physics and aerospace industrial engineering.
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-dot"></span>
+            <span>SYSTEM HEALTH: GLOBAL FLEET ONLINE (99.99%)</span>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-link-group">
+            <h4 class="footer-heading">HARDWARE</h4>
+            <a href="#hero-section">Aether Pro</a>
+            <a href="#shop-section">Magnetic Quick-Dock</a>
+            <a href="#shop-section">Tuner Cap Pack</a>
+            <a href="#interactive-lab">Exploded Schematics</a>
+          </div>
+          <div class="footer-link-group">
+            <h4 class="footer-heading">SUPPORT</h4>
+            <a href="#">Firmware Updater</a>
+            <a href="#">Warranty Claim</a>
+            <a href="#">Product Manuals</a>
+            <a href="#">Contact Engineering</a>
+          </div>
+          <div class="footer-link-group">
+            <h4 class="footer-heading">COMMUNITY</h4>
+            <a href="#">Discord Server</a>
+            <a href="#">Esports Partnerships</a>
+            <a href="#">Developer SDK</a>
+            <a href="#">Security Bounty</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="copyright-text">
+          &copy; 2026 AETHER GAMING LABS INC. ALL RIGHTS RESERVED. DESIGNED FOR CHAMPIONS.
+        </div>
+        <div class="footer-meta-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Hardware Sale</a>
+          <a href="#">Legal Patents</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- SLIDE-OVER LUXURY SHOPPING CART DRAWER         -->
+  <!-- ============================================== -->
+  <div id="cart-drawer" class="cart-drawer-overlay">
+    <div class="cart-backdrop" onclick="window.AetherApp.closeCart()"></div>
+    <div class="cart-panel">
+      
+      <div class="cart-panel-header">
+        <div class="cart-header-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 mr-2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>YOUR HARDWARE BAG</span>
+        </div>
+        <button class="cart-close-btn" onclick="window.AetherApp.closeCart()" aria-label="Close Cart">✕</button>
+      </div>
+
+      <!-- Free Express Shipping Meter -->
+      <div class="shipping-meter-box">
+        <div class="meter-text">
+          <span>✓ UNLOCKED: <strong>FREE WORLDWIDE EXPRESS DELIVERY</strong></span>
+        </div>
+        <div class="meter-track">
+          <div class="meter-fill" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List -->
+      <div id="cart-items-container" class="cart-items-list">
+        <!-- Rendered dynamically by JS -->
+      </div>
+
+      <!-- Cart Upsell Accessory -->
+      <div class="cart-upsell-box">
+        <span class="upsell-tag">RECOMMENDED PAIRING</span>
+        <div class="upsell-item">
+          <div class="upsell-info">
+            <span class="upsell-name">Aether Magnetic Quick-Dock</span>
+            <span class="upsell-price">+$39.00 USD</span>
+          </div>
+          <button class="ghost-btn-sm" onclick="window.AetherApp.addUpsell()">+ Add</button>
+        </div>
+      </div>
+
+      <!-- Cart Total & Checkout -->
+      <div class="cart-footer">
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal" class="font-bold">$199.00</span>
+        </div>
+        <div class="cart-summary-row text-muted text-sm">
+          <span>Shipping &amp; Duties</span>
+          <span class="text-cyan-400">FREE</span>
+        </div>
+        <div class="cart-summary-row text-muted text-sm">
+          <span>1-Year Hardware Warranty</span>
+          <span class="text-cyan-400">INCLUDED</span>
+        </div>
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cart-total-price" class="cart-total-val">$199.00 USD</span>
+        </div>
+
+        <button class="primary-glow-btn w-full btn-large" onclick="window.AetherApp.handleCheckout()">
+          <span>PROCEED TO SECURE CHECKOUT</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-2">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+
+        <div class="payment-badges-row">
+          <span>APPLE PAY</span> • <span>GOOGLE PAY</span> • <span>VISA</span> • <span>MASTERCARD</span> • <span>KLARNA</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- FULL HARDWARE SPECIFICATIONS MODAL             -->
+  <!-- ============================================== -->
+  <div id="specs-modal" class="specs-modal-overlay">
+    <div class="specs-backdrop" onclick="window.AetherApp.closeSpecsModal()"></div>
+    <div class="specs-dialog">
+      <div class="specs-dialog-header">
+        <div class="specs-modal-title">
+          <span class="modal-tag">SCHEMATICS ARCHIVE</span>
+          <h3>AETHER PRO // ARCHITECTURAL BREAKDOWN</h3>
+        </div>
+        <button class="modal-close-btn" onclick="window.AetherApp.closeSpecsModal()">✕</button>
+      </div>
+
+      <div class="specs-dialog-body">
+        <div class="specs-modal-grid">
+          
+          <div class="specs-modal-section">
+            <h4>PHYSICAL ARCHITECTURE</h4>
+            <ul>
+              <li><strong>Dimensions:</strong> 158mm × 104mm × 62mm</li>
+              <li><strong>Weight:</strong> 242 grams (optimally balanced 50:50)</li>
+              <li><strong>Grip Material:</strong> Dual-injection composite rubber with 0.1mm micro-diamond etching</li>
+              <li><strong>Thumbstick Shafts:</strong> CNC machined anodized aluminum</li>
+              <li><strong>Subframe:</strong> Lightweight aerospace magnesium-aluminum alloy</li>
+            </ul>
+          </div>
+
+          <div class="specs-modal-section">
+            <h4>ELECTROMAGNETIC SENSING</h4>
+            <ul>
+              <li><strong>Gimbal Sensors:</strong> Dual Hall-Effect solid-state magnetic sensors</li>
+              <li><strong>Sampling Frequency:</strong> 4,000Hz internal analog scan rate</li>
+              <li><strong>Resolution:</strong> 12-bit (4,096 discrete steps per axis)</li>
+              <li><strong>Stick Deadzone:</strong> 0.00% true physical zero deadzone</li>
+              <li><strong>Trigger Sensors:</strong> Dual-stage Hall-effect induction + physical 0.5mm microswitch stops</li>
+            </ul>
+          </div>
+
+          <div class="specs-modal-section">
+            <h4>PROCESSING &amp; WIRELESS</h4>
+            <ul>
+              <li><strong>MCU:</strong> Dual-Core ARM Cortex 32-bit coprocessor</li>
+              <li><strong>Polling Rate:</strong> 1000Hz (1 packet/millisecond)</li>
+              <li><strong>Wireless Latency:</strong> 0.2ms average via proprietary 2.4GHz RF</li>
+              <li><strong>Bluetooth:</strong> Bluetooth 5.3 Low Energy (multi-device pair)</li>
+              <li><strong>Wired Interface:</strong> High-bandwidth USB 2.0 Full-Speed Type-C</li>
+            </ul>
+          </div>
+
+          <div class="specs-modal-section">
+            <h4>WHAT'S IN THE BOX</h4>
+            <ul>
+              <li>1× Aether Pro Flagship Matte-Black Controller</li>
+              <li>1× 2.4GHz Low-Latency Ultra-Sync USB-A/C Dongle</li>
+              <li>1× 3.0m Braided Paracord USB-C to USB-A Cable</li>
+              <li>4× Interchangeable Ergonomic Stick Tops</li>
+              <li>1× Ballistic Nylon Protective Hard Travel Case</li>
+              <li>1× Certificate of Tournament Calibration</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- TOAST NOTIFICATION (Add To Cart Confirmation)   -->
+  <!-- ============================================== -->
+  <div id="toast-notify" class="toast-notification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <div id="toast-title" class="toast-title">ITEM ADDED TO HARDWARE BAG</div>
+      <div id="toast-desc" class="toast-desc">Aether Pro // Wireless Controller ($199.00)</div>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="search-modal" class="search-overlay">
+    <div class="search-backdrop" onclick="window.AetherApp.closeSearch()"></div>
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-gray-400">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search controllers, accessories, schematics..." autofocus>
+        <button class="search-esc" onclick="window.AetherApp.closeSearch()">ESC</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="sugg-tag" onclick="window.AetherApp.quickSearch('Aether Pro')">Aether Pro</span>
+        <span class="sugg-tag" onclick="window.AetherApp.quickSearch('Hall Effect')">Hall Effect Sticks</span>
+        <span class="sugg-tag" onclick="window.AetherApp.quickSearch('Quick-Dock')">Magnetic Quick-Dock</span>
+        <span class="sugg-tag" onclick="window.AetherApp.quickSearch('Firmware')">Firmware 2.4.1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+</body>
+</html>
